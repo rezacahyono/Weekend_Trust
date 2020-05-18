@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shoes_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:padding="8dp"
+        android:background="@color/colorPrimary">
+        
+        <ImageView
+            android:id="@+id/img_shoes"
+            android:layout_width="90dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_rounded" />
+        
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/img_shoes"
+            android:layout_toRightOf="@+id/img_shoes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/shoes_name" />
+        
+        <TextView
+            android:id="@+id/tv_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_button"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@+id/img_shoes"
+            android:layout_toRightOf="@+id/img_shoes"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="@string/price" />
+        
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toEndOf="@+id/img_shoes"
+            android:layout_toRightOf="@+id/img_shoes"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_buy"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:text="@string/buy"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_detail"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="139dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:text="@string/detail"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

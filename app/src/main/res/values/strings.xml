@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weekend Trust</string>
+    <string name="detail">Detail</string>
+    <string name="buy">Buy</string>
+    <string name="price">Price</string>
+    <string name="shoes_name">Name Shoes</string>
+    <string name="my_name">Muhamad Reza Cahyono</string>
+    <string name="my_mail">Rezacahyono1@gmail.com</string>
+    <string name="description">Description</string>
+    <string name="size">Size</string>
+    <string name="spesifikasi">Spesifikasi</string>
+    <string name="picture">picture</string>
+    <string name="conditi">Conditi</string>
+    <string name="profile">profile</string>
+</resources>
